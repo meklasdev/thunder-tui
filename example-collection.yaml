@@ -1,0 +1,37 @@
+requests:
+  - name: "Get GitHub User"
+    method: GET
+    url: "https://api.github.com/users/meklasdev"
+    headers:
+      Accept: "application/vnd.github.v3+json"
+      User-Agent: "Thunder-TUI"
+
+  - name: "JSONPlaceholder - Get Posts"
+    method: GET
+    url: "https://jsonplaceholder.typicode.com/posts"
+    headers:
+      Content-Type: "application/json"
+
+  - name: "JSONPlaceholder - Create Post"
+    method: POST
+    url: "https://jsonplaceholder.typicode.com/posts"
+    headers:
+      Content-Type: "application/json"
+    body: |
+      {
+        "title": "Thunder-TUI Test",
+        "body": "This is a test post from Thunder-TUI",
+        "userId": 1
+      }
+
+  - name: "Get IP Info"
+    method: GET
+    url: "https://ipapi.co/json/"
+    headers:
+      User-Agent: "Thunder-TUI"
+
+  - name: "Random User API"
+    method: GET
+    url: "https://randomuser.me/api/"
+    headers:
+      Accept: "application/json"
